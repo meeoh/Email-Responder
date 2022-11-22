@@ -4,6 +4,7 @@ const notifier = require("mail-notifier");
 const nodemailer = require("nodemailer");
 const convertFile = require("./docx_to_pdf").convertFile;
 const { Duplex } = require("stream"); // Native Node Module
+const fs = require("fs");
 
 const email = process.env.EMAIL;
 const password = process.env.PASSWORD;
